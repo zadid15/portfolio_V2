@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-[#210D4F]">
+    <!-- Preloader -->
+    <div id="preloader"
+        class="animate-gradient flex flex-col items-center justify-center h-screen bg-gray-100 fixed inset-0 z-50 bg-[#210D4F]">
+        <div class="text-center">
+            <div class="flex items-center" style="gap: 35px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
+                <a href="https://github.com/zadid15" target="_blank"
+                    class="github-icon text-white hover:text-gray-300 text-[76px] font-bold">
+                    <i class="fab fa-github fa-md"></i> <!-- Ikon GitHub -->
+                </a>
+                <h1 class="text-white welcome-text text-[76px] font-bold">Welcome To My</h1>
+                <a href="#" target="_blank" class="codepen-icon text-white hover:text-gray-300 text-[76px] font-bold">
+                    <i class="fas fa-code fa-md"></i> <!-- Ikon Kode -->
+                </a>
+            </div>
+            <h1 class="mt-[-30px] gradient-text portfolio-text text-[76px] font-bold">Portfolio Website</h1>
+            <p id="typed-output" class="text-zdd text-white text-[10px]"></p>
+        </div>
+    </div>
+
+    <div id="container" class="hidden">
+        <!-- Navbar Section Start -->
+        <nav id="navbar" class="bg-[rgba(0,0,0,0.4)] fixed top-0 left-0 w-full shadow-md z-50">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                <div class="text-white text-lg font-bold text-[#DB6E00]">zdd</div>
+                <div class="space-x-[25px] me-[45px]">
+                    <a href="#home" class="text-white hover:text-[#DB6E00] text-shadow-custom">Home</a>
+                    <a href="#menu" class="text-white hover:text-[#DB6E00] shadow-md">Menu</a>
+                    <a href="#about" class="text-white hover:text-[#DB6E00] shadow-md">Tentang Kami</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Section End -->
+        <!-- Hero Section Start -->
+        <section id="home" class="bg-cover bg-center h-screen hero">
+            <div class="flex items-start ms-[100px] justify-center h-full space-y-[50px] flex-col" data-aos="fade-in"
+                data-aos-duration="3000">
+                <div class="space-y-[-5px]">
+                    <div class="space-y-[-35px] text-[64px]">
+                        <h2 class="text-white font-black text-shadow">Fullstack</h2>
+                        <h2 class="text-[#DB6E00] font-black gradient-text">Developer</h2>
+                    </div>
+                    <div class="absolute">
+                        <div id="typed-text-2" class="space-y-[-5px] text-white text-shadow-custom"></div>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <p class="text-white text-shadow-custom font-extralight text-[24px]">Menciptakan Website Yang
+                        Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.</p>
+                </div>
+                <div class="flex space-x-4" style="margin-top: 15px;">
+                    <a href="pesan.html" class="btn-modern">
+                        <span class="me-[10px]">Projects</span>
+                        <i class="fas fa-folder-open"></i>
+                    </a>
+                    <a href="pesan.html" class="btn-modern">
+                        <span class="me-[10px]">Contact</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                </div>
+                <div class="flex space-x-[20px] ms-[10px]">
+                    <a href="https://facebook.com" target="_blank"
+                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank"
+                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank"
+                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://facebook.com" target="_blank"
+                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+    </div>
+
+    <script src="../public/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</body>
+
+</html>
