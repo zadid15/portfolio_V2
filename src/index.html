@@ -48,8 +48,9 @@
         </nav>
         <!-- Navbar Section End -->
         <!-- Hero Section Start -->
-        <section id="home" class="bg-cover bg-center h-screen hero">
-            <div class="flex items-start ms-[100px] justify-center h-full space-y-[50px] flex-col" data-aos="fade-in"
+        <section id="home" class="bg-cover bg-center h-screen hero flex">
+            <!-- Bagian Kiri: Konten Teks -->
+            <div class="flex-1 flex items-start justify-center ms-[100px] flex-col space-y-[50px]" data-aos="fade-in"
                 data-aos-duration="3000">
                 <div class="space-y-[-5px]">
                     <div class="space-y-[-35px] text-[64px]">
@@ -60,9 +61,10 @@
                         <div id="typed-text-2" class="space-y-[-5px] text-white text-shadow-custom"></div>
                     </div>
                 </div>
-                <div class="w-1/2">
-                    <p class="text-white text-shadow-custom font-extralight text-[24px]">Menciptakan Website Yang
-                        Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.</p>
+                <div class="w-[650px]">
+                    <p class="text-white text-shadow-custom font-extralight text-[24px]">
+                        Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.
+                    </p>
                 </div>
                 <div class="flex space-x-4" style="margin-top: 15px;">
                     <a href="pesan.html" class="btn-modern">
@@ -73,10 +75,9 @@
                         <span class="me-[10px]">Contact</span>
                         <i class="fas fa-envelope"></i>
                     </a>
-
                 </div>
                 <div class="flex space-x-[20px] ms-[10px]">
-                    <a href="https://facebook.com" target="_blank"
+                    <a href="https://github.com" target="_blank"
                         class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
                         <i class="fab fa-github"></i>
                     </a>
@@ -88,14 +89,61 @@
                         class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="https://facebook.com" target="_blank"
+                    <a href="https://linkedin.com" target="_blank"
                         class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
             </div>
+
+            <div class="flex-1 flex items-center justify-center">
+                <img src="../public/images/xero-code.gif" alt="GIF Animasi">
+            </div>
+
         </section>
         <!-- Hero Section End -->
+
+        <!-- About Me Section Start -->
+        <section id="about" class="bg-cover bg-center h-screen hero flex flex-col items-center justify-center">
+            <!-- Judul -->
+            <div class="text-center">
+                <h2 class="text-[#DB6E00] text-shadow-custom flex flex-col">
+                    <span class="text-white text-[52px] font-extrabold">About Me</span>
+                    <span class="text-[24px] gradient-text-under-title">Transforming ideas into digital
+                        experiences</span>
+                </h2>
+            </div>
+            <!-- Konten Dua Bagian -->
+            <div class="flex items-center justify-between w-full max-w-[1450px]">
+                <!-- Konten Kiri -->
+                <div class="flex-1 flex justify-center items-center p-10">
+                    <div>
+                        <div class="space-y-[-30px]">
+                            <h2 class="text-white font-extrabold text-[52px]">Hello, I'm</h2>
+                            <h2 class="text-white font-extrabold text-[52px]">Muhammad Zadid</h2>
+                        </div>
+                        <p class="text-white text-[18px] leading-[30px]">
+                            A Software Engineering student interested in web development. I focus on creating responsive
+                            interfaces and providing innovative solutions in every project.
+                        </p>
+                        <!-- Social Media Links -->
+                        <div class="flex space-x-3 mt-4">
+                            <a href="pesan.html" class="btn-modern">
+                                <span class="me-[10px]">Download CV</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Konten Kanan -->
+                <div class="flex-1 flex justify-center items-center ">
+                    <img src="../public/images/myphoto.png" alt="My Photo" class="w-[350px] rounded-[50px]">
+                </div>
+            </div>
+        </section>
+        <!-- About Me Section End -->
+
+
     </div>
 
     <script src="../public/js/script.js"></script>

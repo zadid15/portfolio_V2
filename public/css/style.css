@@ -41,6 +41,13 @@ body {
     }
 }
 
+.gradient-text-under-title {
+    background: linear-gradient(to right, #ffffff 0%, #999999 100%);
+    background-clip: text; /* Untuk efek gradient pada teks di Webkit */
+    -webkit-background-clip: text; /* Untuk efek gradient pada teks di Webkit */
+    color: transparent; /* Buat teks transparan untuk menampilkan gradient */
+}
+
 .gradient-text {
     background: linear-gradient(to right, #CFC2EC 0%, #9669FF 63%, #6521FF 84%);
     background-clip: text; /* Untuk efek gradient pada teks di Webkit */
