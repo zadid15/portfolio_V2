@@ -96,5 +96,5 @@ window.onload = () => {
         new Typed("#typed-text-2", options2);
       },
     });
-  }, 5); // Menunggu 3 detik
+  }, 1); // Menunggu 3 detik
 };
