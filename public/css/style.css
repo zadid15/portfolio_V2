@@ -2,12 +2,18 @@
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .animate-gradient {
@@ -17,68 +23,94 @@
 }
 
 body {
-    background-color: #210D4F; /* Sama dengan background preloader */
-    transition: background-color 1s ease; /* Transisi halus untuk warna background */
+    background-color: #210D4F;
+    /* Sama dengan background preloader */
+    transition: background-color 1s ease;
+    /* Transisi halus untuk warna background */
     font-family: 'Outfit', sans-serif;
 }
 
 /* Tambahkan gaya animasi */
 @keyframes fadeOut {
     0% {
-        opacity: 1; /* Mulai dengan opacity 1 */
+        opacity: 1;
+        /* Mulai dengan opacity 1 */
     }
+
     100% {
-        opacity: 0; /* Akhiri dengan opacity 0 */
+        opacity: 0;
+        /* Akhiri dengan opacity 0 */
     }
 }
 
 @keyframes fadeIn {
     0% {
-        opacity: 0; /* Mulai dengan opacity 0 */
+        opacity: 0;
+        /* Mulai dengan opacity 0 */
     }
+
     100% {
-        opacity: 1; /* Akhiri dengan opacity 1 */
+        opacity: 1;
+        /* Akhiri dengan opacity 1 */
     }
 }
 
 .gradient-text-under-title {
     background: linear-gradient(to right, #ffffff 0%, #999999 100%);
-    background-clip: text; /* Untuk efek gradient pada teks di Webkit */
-    -webkit-background-clip: text; /* Untuk efek gradient pada teks di Webkit */
-    color: transparent; /* Buat teks transparan untuk menampilkan gradient */
+    background-clip: text;
+    /* Untuk efek gradient pada teks di Webkit */
+    -webkit-background-clip: text;
+    /* Untuk efek gradient pada teks di Webkit */
+    color: transparent;
+    /* Buat teks transparan untuk menampilkan gradient */
 }
 
 .gradient-text {
     background: linear-gradient(to right, #CFC2EC 0%, #9669FF 63%, #6521FF 84%);
-    background-clip: text; /* Untuk efek gradient pada teks di Webkit */
-    -webkit-background-clip: text; /* Untuk efek gradient pada teks di Webkit */
-    color: transparent; /* Buat teks transparan untuk menampilkan gradient */
+    background-clip: text;
+    /* Untuk efek gradient pada teks di Webkit */
+    -webkit-background-clip: text;
+    /* Untuk efek gradient pada teks di Webkit */
+    color: transparent;
+    /* Buat teks transparan untuk menampilkan gradient */
 }
 
 .fade-in-up {
-    animation: fadeInUp 0.5s ease forwards; /* Durasi dan efek animasi */
+    animation: fadeInUp 0.5s ease forwards;
+    /* Durasi dan efek animasi */
 }
 
 #typed-output {
-    color: white; /* Warna teks */
-    font-size: 24px; /* Ukuran font yang lebih besar untuk keterbacaan */
-    display: inline; /* Agar kursor bisa muncul di samping teks */
+    color: white;
+    /* Warna teks */
+    font-size: 24px;
+    /* Ukuran font yang lebih besar untuk keterbacaan */
+    display: inline;
+    /* Agar kursor bisa muncul di samping teks */
 }
 
 .typed-cursor {
-    color: white; /* Warna kursor */
-    font-weight: normal; /* Mengubah ketebalan font menjadi normal */
-    font-size: 24px; /* Ukuran font kursor yang lebih kecil */
-    animation: blink 0.7s infinite; /* Efek berkedip */
-    display: inline; /* Agar kursor bisa muncul di samping teks */
+    color: white;
+    /* Warna kursor */
+    font-weight: normal;
+    /* Mengubah ketebalan font menjadi normal */
+    font-size: 24px;
+    /* Ukuran font kursor yang lebih kecil */
+    animation: blink 0.7s infinite;
+    /* Efek berkedip */
+    display: inline;
+    /* Agar kursor bisa muncul di samping teks */
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #372162, #4a287b, #361979, #210d48, #0e022a); /* Gradien dengan variasi warna */
-    background-size: 400% 400%; /* Memperbesar ukuran gradien */
-    animation: moveBackground 15s ease infinite; /* Animasi gradien */
+    background: linear-gradient(45deg, #372162, #4a287b, #361979, #210d48, #0e022a);
+    /* Gradien dengan variasi warna */
+    background-size: 400% 400%;
+    /* Memperbesar ukuran gradien */
+    animation: moveBackground 20s ease infinite;
+    /* Animasi gradien */
 }
 
 /* Animasi untuk gradien */
@@ -86,9 +118,11 @@ body {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -101,9 +135,12 @@ body {
 }
 
 @keyframes blink-2 {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
@@ -130,3 +167,17 @@ body {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
+#container {
+    position: relative;
+    z-index: 1;
+    /* Menempatkan konten di atas partikel */
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Partikel di belakang */
+}

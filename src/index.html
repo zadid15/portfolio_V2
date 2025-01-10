@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../public/css/style.css">
@@ -15,6 +16,7 @@
 </head>
 
 <body class="bg-[#210D4F]">
+
     <!-- Preloader -->
     <div id="preloader"
         class="animate-gradient flex flex-col items-center justify-center h-screen bg-gray-100 fixed inset-0 z-50 bg-[#210D4F]">
@@ -34,15 +36,17 @@
         </div>
     </div>
 
+    <div id="particles-js" data-aos="fade"></div>
+
     <div id="container" class="hidden">
         <!-- Navbar Section Start -->
-        <nav id="navbar" class="bg-[rgba(0,0,0,0.4)] fixed top-0 left-0 w-full shadow-md z-50">
+        <nav id="navbar" class="bg-[rgba(0,0,0,0.4)] fixed top-0 left-0 w-full shadow-md z-50" data-aos="fade-down">
             <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
                 <div class="text-white text-lg font-bold text-[#DB6E00]">zdd</div>
                 <div class="space-x-[25px] me-[45px]">
                     <a href="#home" class="text-white hover:text-[#7B319B] text-shadow-custom">Home</a>
                     <a href="#about" class="text-white hover:text-[#7B319B] shadow-md">About Me</a>
-                    <a href="#about" class="text-white hover:text-[#7B319B] shadow-md">Tentang Kami</a>
+                    <a href="#portfolio" class="text-white hover:text-[#7B319B] shadow-md">Portfolio</a>
                 </div>
             </div>
         </nav>
@@ -50,33 +54,33 @@
         <!-- Hero Section Start -->
         <section id="home" class="bg-cover bg-center h-screen hero flex">
             <!-- Bagian Kiri: Konten Teks -->
-            <div class="flex-1 flex items-start justify-center ms-[100px] flex-col space-y-[50px]" data-aos="fade-in"
-                data-aos-duration="3000">
+            <div class="flex-1 flex items-start justify-center ms-[100px] flex-col space-y-[50px]">
                 <div class="space-y-[-5px]">
                     <div class="space-y-[-35px] text-[64px]">
-                        <h2 class="text-white font-black text-shadow">Fullstack</h2>
-                        <h2 class="text-[#DB6E00] font-black gradient-text">Developer</h2>
+                        <h2 class="text-white font-black text-shadow" data-aos="fade-right">Fullstack</h2>
+                        <h2 class="text-[#DB6E00] font-black gradient-text" data-aos="fade-left">Developer</h2>
                     </div>
                     <div class="absolute">
-                        <div id="typed-text-2" class="space-y-[-5px] text-white text-shadow-custom"></div>
+                        <div id="typed-text-2" class="space-y-[-5px] text-white text-shadow-custom"
+                            data-aos="fade-right"></div>
                     </div>
                 </div>
                 <div class="w-[650px]">
-                    <p class="text-white text-shadow-custom font-extralight text-[24px]">
+                    <p class="text-white text-shadow-custom font-extralight text-[24px]" data-aos="fade">
                         Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.
                     </p>
                 </div>
                 <div class="flex space-x-4" style="margin-top: 15px;">
-                    <a href="pesan.html" class="btn-modern">
+                    <a href="pesan.html" class="btn-modern" data-aos="fade-right">
                         <span class="me-[10px]">Projects</span>
                         <i class="fas fa-folder-open"></i>
                     </a>
-                    <a href="pesan.html" class="btn-modern">
+                    <a href="pesan.html" class="btn-modern" data-aos="fade-left">
                         <span class="me-[10px]">Contact</span>
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-                <div class="flex space-x-[20px] ms-[10px]">
+                <div class="flex space-x-[20px] ms-[10px]" data-aos="fade" data-aos-duration="3000">
                     <a href="https://github.com" target="_blank"
                         class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
                         <i class="fab fa-github"></i>
@@ -96,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="flex-1 flex items-center justify-center">
+            <div class="flex-1 flex items-center justify-center" data-aos="fade-left">
                 <img src="../public/images/xero-code.gif" alt="GIF Animasi">
             </div>
 
@@ -108,15 +112,16 @@
             <!-- Judul -->
             <div class="text-center">
                 <h2 class="text-[#DB6E00] text-shadow-custom flex flex-col">
-                    <span class="text-white text-[52px] font-extrabold">About Me</span>
-                    <span class="text-[24px] gradient-text-under-title">Transforming ideas into digital
+                    <span class="text-white text-[52px] font-extrabold" data-aos="fade-up">About Me</span>
+                    <span class="text-[24px] gradient-text-under-title" data-aos="fade-up">Transforming ideas into
+                        digital
                         experiences</span>
                 </h2>
             </div>
             <!-- Konten Dua Bagian -->
             <div class="flex items-center justify-between w-full max-w-[1450px]">
                 <!-- Konten Kiri -->
-                <div class="flex-1 flex justify-center items-center p-10">
+                <div class="flex-1 flex justify-center items-center p-10" data-aos="fade-right">
                     <div>
                         <div class="space-y-[-30px]">
                             <h2 class="text-white font-extrabold text-[52px]">Hello, I'm</h2>
@@ -136,7 +141,7 @@
                     </div>
                 </div>
                 <!-- Konten Kanan -->
-                <div class="flex-1 flex justify-center items-center ">
+                <div class="flex-1 flex justify-center items-center" data-aos="fade-left">
                     <img src="../public/images/myphoto.png" alt="My Photo" class="w-[350px] rounded-[50px]">
                 </div>
             </div>
@@ -144,34 +149,22 @@
         <!-- About Me Section End -->
 
         <!-- Portfolio Showcase Section Start -->
-        <section id="about" class="bg-cover bg-center h-screen hero flex flex-col items-center justify-center">
+        <section id="portfolio" class="bg-cover bg-center h-screen hero flex flex-col items-center justify-center">
             <!-- Judul -->
             <div class="text-center">
                 <h2 class="text-[#DB6E00] text-shadow-custom flex flex-col">
-                    <span class="text-white text-[52px] font-extrabold">Portfolio Showcase</span>
-                    <span class="text-[24px] gradient-text-under-title w-[800px]">Explore my journey through projects.
+                    <span class="text-white text-[52px] font-extrabold" data-aos="fade-up">Portfolio Showcase</span>
+                    <span class="text-[24px] gradient-text-under-title w-[800px]" data-aos="fade-up">Explore my journey
+                        through projects.
                         Each section represents a milestone in my continuous learning path.</span>
                 </h2>
             </div>
-            <div class="flex items-center justify-center mt-4 mb-4 w-full max-w-[1450px]">
-                <div
-                    class="flex-1 text-center max-w-[700px] flex  justify-center items-center bg-white h-[50px] rounded-[50px] space-x-6 p-10" style="box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);">
-                    <a href="" class="btn-modern">
-                        <p>Projects</p>
-                    </a>
-                    <a href="" class="btn-modern">
-                        <p>Certificates</p>
-                    </a>
-                    <a href="" class="btn-modern">
-                        <p>Hobbies</p>
-                    </a>
-                </div>
-            </div>
             <!-- Portfolio Cards Start -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5 max-w-[1450px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5 max-w-[1450px] mx-auto"
+                data-aos="fade-up">
                 <!-- Card 1 -->
-                <div
-                    class="bg-[#272727] p-3  shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="bg-[#272727] p-3  shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                    data-aos="fade-right">
                     <img src="../public/images/projek1.png" alt="Project Image" class="w-full h-[200px] object-cover">
                     <div class="p-6">
                         <h3 class="text-white text-xl font-bold mb-2">Modern Coffee Shop Website Design</h3>
@@ -180,8 +173,8 @@
                     </div>
                 </div>
                 <!-- Card 1 -->
-                <div
-                    class="bg-[#272727] p-3  shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="bg-[#272727] p-3  shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                    data-aos="fade">
                     <img src="../public/images/projek4.png" alt="Project Image" class="w-full h-[200px] object-cover">
                     <div class="p-6">
                         <h3 class="text-white text-xl font-bold mb-2">Simple Movie Website</h3>
@@ -190,8 +183,8 @@
                     </div>
                 </div>
                 <!-- Card 1 -->
-                <div
-                    class="bg-[#272727] p-3  shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div class="bg-[#272727] p-3  shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                    data-aos="fade-left">
                     <img src="../public/images/projek3.png" alt="Project Image" class="w-full h-[200px] object-cover">
                     <div class="p-6">
                         <h3 class="text-white text-xl font-bold mb-2">Gallery Website</h3>
@@ -203,12 +196,38 @@
         </section>
         <!-- Portfolio Showcase Section End -->
 
+        <!-- Footer Section Start -->
+        <footer class="bg-gray-900 text-gray-400 py-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="mb-2">&copy; 2025 zdd. All Rights Reserved.</p>
+                <p>
+                    <a href="#home" class="text-gray-400 hover:text-white transition">Home</a> |
+                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a> |
+                    <a href="#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a>
+                </p>
+                <div class="mt-4">
+                    <a href="https://www.linkedin.com/in/muhammad-zadid" target="_blank"
+                        class="text-gray-400 hover:text-white mx-2 transition">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/zadid15" target="_blank"
+                        class="text-gray-400 hover:text-white mx-2 transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
 
     </div>
 
     <script src="../public/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- Tambahkan AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 </body>
 
 </html>

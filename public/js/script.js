@@ -43,14 +43,6 @@ window.onload = () => {
     delay: 0.5, // Delay sedikit agar tidak bersamaan
   });
 
-  gsap.from(".typed-cursor", {
-    duration: 1,
-    opacity: 0,
-    y: 20, // Masuk dari bawah
-    ease: "power2.out",
-    delay: 0.5, // Delay sedikit agar tidak bersamaan
-  });
-
   // Inisialisasi Typed.js sebelum menyembunyikan preloader
   const options = {
     strings: ["Zadid Ganteng Banget 😎"],
@@ -61,8 +53,6 @@ window.onload = () => {
   };
 
   const typed = new Typed("#typed-output", options); // Menginisialisasi Typed.js
-
-  
 
   // Simulasi pemuatan data
   setTimeout(() => {
@@ -84,16 +74,69 @@ window.onload = () => {
 
         // Inisialisasi Typed.js setelah preloader selesai
         const options2 = {
-            strings: ["Code and Software Engineering Student"],
-            typeSpeed: 50,
-            backSpeed: 25,
-            loop: true,
-            cursorChar: "|", // Karakter kursor
-            showCursor: true, // Tampilkan kursor
-            cursorClass: "typed-cursor-2", // Kelas khusus kursor
+          strings: ["Code and Software Engineering Student"],
+          typeSpeed: 50,
+          backSpeed: 25,
+          loop: true,
+          cursorChar: "|", // Karakter kursor
+          showCursor: true, // Tampilkan kursor
+          cursorClass: "typed-cursor-2", // Kelas khusus kursor
         };
 
         new Typed("#typed-text-2", options2);
+
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: true,
+        });
+
+        // Inisialisasi partikel
+        particlesJS("particles-js", {
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+            },
+            shape: {
+              type: "circle", // Bentuk partikel
+            },
+            opacity: {
+              value: 0.5,
+              random: true, // Opasitas acak
+            },
+            size: {
+              value: 3,
+              random: true,
+            },
+            move: {
+              enable: true,
+              speed: 2, // Kecepatan dasar partikel
+              direction: "none",
+              random: true,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+            },
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse", // Efek saat hover
+              },
+              onmousemove: {
+                enable: true,
+                mode: "repulse", // Partikel menjauh dari kursor saat bergerak
+                distance: 100, // Jarak partikel menjauh dari kursor
+                speed: 5, // Kecepatan menjauh dari kursor
+              },
+            },
+          },
+        });
       },
     });
   }, 1); // Menunggu 3 detik
