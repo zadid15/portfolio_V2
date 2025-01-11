@@ -66,8 +66,29 @@ window.onload = () => {
         document.getElementById("preloader").style.display = "none"; // Sembunyikan preloader
 
         // Ambil container
-        const container = document.getElementById("container");
+        const container = document.getElementById("content");
         container.classList.remove("hidden");
+
+        // Navbar Fixed
+        window.onscroll = () => {
+          const header = document.querySelector("header");
+          const fixedNav = header.offsetTop;
+
+          if (window.pageYOffset > fixedNav) {
+            header.classList.add("navbar-fixed");
+          } else {
+            header.classList.remove("navbar-fixed");
+          }
+        };
+
+        // Hamburger
+        const hamburger = document.getElementById("hamburger");
+        const navbar = document.getElementById("navbar");
+
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("hamburger-active");
+          navbar.classList.toggle("hidden");
+        });
 
         // Efek fade-in untuk konten
         gsap.from(container, { duration: 1, opacity: 0 }); // Hanya fade-in
@@ -139,5 +160,5 @@ window.onload = () => {
         });
       },
     });
-  }, 1); // Menunggu 3 detik
+  }, 3000); // Menunggu 3 detik
 };

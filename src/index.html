@@ -38,19 +38,45 @@
 
     <div id="particles-js" data-aos="fade"></div>
 
-    <div id="container" class="hidden">
-        <!-- Navbar Section Start -->
-        <nav id="navbar" class="bg-[rgba(0,0,0,0.4)] fixed top-0 left-0 w-full shadow-md z-50" data-aos="fade-down">
-            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-                <div class="text-white text-lg font-bold text-[#DB6E00]">zdd</div>
-                <div class="space-x-[25px] me-[45px]">
-                    <a href="#home" class="text-white hover:text-[#7B319B] text-shadow-custom">Home</a>
-                    <a href="#about" class="text-white hover:text-[#7B319B] shadow-md">About Me</a>
-                    <a href="#portfolio" class="text-white hover:text-[#7B319B] shadow-md">Portfolio</a>
+    <div id="content" class="hidden">
+        <!-- Navbar Start -->
+        <header class="bg-transparent justify-center absolute top-0 left-0 w-full flex items-center z-10">
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-4">
+                        <a href="#home" class="font-bold text-lg text-white block py-6">ZDD</a>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                        </button>
+
+                        <nav id="navbar"
+                            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a href="#home"
+                                        class="text-base text-white py-2 mx-8 flex hover:text-[#7B319B]">Home</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#about"
+                                        class="text-base text-white py-2 mx-8 flex hover:text-[#7B319B]">About Me</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#portfolio"
+                                        class="text-base text-white py-2 mx-8 flex hover:text-[#7B319B]">Portfolio</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
                 </div>
             </div>
-        </nav>
-        <!-- Navbar Section End -->
+        </header>
+        <!-- Navbar End -->
+
         <!-- Hero Section Start -->
         <section id="home" class="bg-cover bg-center h-screen hero flex">
             <!-- Bagian Kiri: Konten Teks -->
