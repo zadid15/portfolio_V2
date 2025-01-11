@@ -204,11 +204,11 @@ body {
     height: 2px;
     width: 30px;
     --tw-bg-opacity: 1;
-    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hamburger-active>span:nth-child(1) {
-    --tw-rotate: 45deg;
+    --tw-rotate: 43deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -219,7 +219,7 @@ body {
 }
 
 .hamburger-active>span:nth-child(3) {
-    --tw-rotate: -45deg;
+    --tw-rotate: -43deg;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
