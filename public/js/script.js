@@ -69,25 +69,23 @@ window.onload = () => {
         const container = document.getElementById("content");
         container.classList.remove("hidden");
 
-        // Navbar Fixed
-        window.onscroll = () => {
-          const header = document.querySelector("header");
-          const fixedNav = header.offsetTop;
+        // Script untuk menampilkan atau menyembunyikan menu saat tombol hamburger diklik
+        const hamburgerButton = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-          if (window.pageYOffset > fixedNav) {
-            header.classList.add("navbar-fixed");
-          } else {
-            header.classList.remove("navbar-fixed");
+        hamburgerButton.addEventListener("click", () => {
+          // Toggle class untuk menampilkan dan menyembunyikan menu
+          mobileMenu.classList.toggle("hidden");
+        });
+
+        // Menutup menu jika klik di luar area menu
+        window.addEventListener("click", (e) => {
+          if (
+            !mobileMenu.contains(e.target) &&
+            !hamburgerButton.contains(e.target)
+          ) {
+            mobileMenu.classList.add("hidden");
           }
-        };
-
-        // Hamburger
-        const hamburger = document.getElementById("hamburger");
-        const navbar = document.getElementById("navbar");
-
-        hamburger.addEventListener("click", () => {
-          hamburger.classList.toggle("hamburger-active");
-          navbar.classList.toggle("hidden");
         });
 
         // Efek fade-in untuk konten
@@ -160,5 +158,5 @@ window.onload = () => {
         });
       },
     });
-  }, 3000); // Menunggu 3 detik
+  }, 1); // Menunggu 3 detik
 };

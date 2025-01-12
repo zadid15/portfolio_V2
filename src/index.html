@@ -39,51 +39,54 @@
     <div id="particles-js" data-aos="fade"></div>
 
     <div id="content" class="hidden">
-        <!-- Navbar Start -->
-        <header class="bg-transparent justify-center absolute top-0 left-0 w-full flex items-center z-10">
-            <div class="container">
-                <div class="flex items-center justify-between relative">
-                    <div class="px-4">
-                        <a href="#home" class="font-bold text-lg text-white block py-6">ZDD</a>
+        <!-- Navigasi -->
+        <nav class="fixed top-0 w-full bg-transparent backdrop-blur-sm text-white z-50">
+            <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="#" class="text-xl font-bold text-white">
+                            ZDD
+                        </a>
                     </div>
-                    <div class="flex items-center px-4">
-                        <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-                            <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+
+                    <!-- Menu Utama (Desktop) -->
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#home" class="text-white hover:text-gray-500">Home</a>
+                        <a href="#about" class="text-white hover:text-gray-500">About</a>
+                        <a href="#portfolio" class="text-white hover:text-gray-500">Portfolio</a>
+                    </div>
+
+                    <!-- Tombol Hamburger (Mobile) -->
+                    <div class="relative md:hidden">
+                        <button id="hamburger" class="text-white text-2xl z-20">
+                            <i class="fas fa-bars"></i>
                         </button>
 
-                        <nav id="navbar"
-                            class="hidden absolute py-5 bg-black shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-                            <ul class="block lg:flex">
-                                <li class="group">
-                                    <a href="#home"
-                                        class="text-base text-white py-2 mx-8 flex hover:text-[#7B319B]">Home</a>
-                                </li>
-                                <li class="group">
-                                    <a href="#about"
-                                        class="text-base text-white py-2 mx-8 flex hover:text-[#7B319B]">About Me</a>
-                                </li>
-                                <li class="group">
-                                    <a href="#portfolio"
-                                        class="text-base text-white py-2 mx-8 flex hover:text-[#7B319B]">Portfolio</a>
-                                </li>
-                            </ul>
-                        </nav>
-
+                        <!-- Mobile Menu -->
+                        <div id="mobile-menu"
+                            class="hidden absolute top-full right-0 w-[250px] bg-black/80 backdrop-blur-lg flex flex-col space-y-4 py-4 px-4 mt-5 rounded-lg shadow-lg border border-gray-700 z-10">
+                            <a href="#home"
+                                class="text-white hover:text-black px-4 py-2 rounded-lg hover:bg-white">Home</a>
+                            <a href="#about"
+                                class="text-white hover:text-black px-4 py-2 rounded-lg hover:bg-white">About</a>
+                            <a href="#portfolio"
+                                class="text-white hover:text-black px-4 py-2 rounded-lg hover:bg-white">Portfolio</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
-        </header>
-        <!-- Navbar End -->
+        </nav>
+
 
         <!-- Hero Section Start -->
-        <section id="home" class="bg-cover bg-center h-screen hero flex">
+        <section id="home" class="bg-cover bg-center items-center justify-center flex-col flex">
             <!-- Bagian Kiri: Konten Teks -->
-            <div class="flex-1 flex items-start justify-center ms-[100px] flex-col space-y-[50px]">
+            <div class="space-y-[42px]">
                 <div class="space-y-[-5px]">
-                    <div class="space-y-[-35px] text-[64px]">
-                        <h2 class="text-white font-black text-shadow" data-aos="fade-right">Fullstack</h2>
+                    <div class="space-y-[-18px] text-[36px]">
+                        <h2 class="text-white font-black text-shadow mt-[100px]" data-aos="fade-right">Fullstack</h2>
                         <h2 class="text-[#DB6E00] font-black gradient-text" data-aos="fade-left">Developer</h2>
                     </div>
                     <div class="absolute">
@@ -91,8 +94,8 @@
                             data-aos="fade-right"></div>
                     </div>
                 </div>
-                <div class="w-[650px]">
-                    <p class="text-white text-shadow-custom font-extralight text-[24px]" data-aos="fade">
+                <div class="w-[320px]">
+                    <p class="text-white/70 text-shadow-custom font-thin text-[18px]" data-aos="fade">
                         Menciptakan Website Yang Inovatif, Fungsional, dan User-Friendly untuk Solusi Digital.
                     </p>
                 </div>
@@ -108,53 +111,58 @@
                 </div>
                 <div class="flex space-x-[20px] ms-[10px]" data-aos="fade" data-aos-duration="3000">
                     <a href="https://github.com" target="_blank"
-                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
+                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2rem]">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="https://instagram.com" target="_blank"
-                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
+                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2rem]">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <a href="https://facebook.com" target="_blank"
-                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
+                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2rem]">
                         <i class="fab fa-facebook"></i>
                     </a>
                     <a href="https://linkedin.com" target="_blank"
-                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2.5rem]">
+                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2rem]">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
             </div>
-
-            <div class="flex-1 flex items-center justify-center" data-aos="fade-left">
+            <div class="flex items-center ms-[14px] justify-center w-[300px]" data-aos="fade-left">
                 <img src="../public/images/xero-code.gif" alt="GIF Animasi">
             </div>
+
 
         </section>
         <!-- Hero Section End -->
 
         <!-- About Me Section Start -->
-        <section id="about" class="bg-cover bg-center h-screen hero flex flex-col items-center justify-center">
+        <section id="about" class="bg-cover bg-center h-screen hero flex flex-col items-center justify-center mt-[40px]">
             <!-- Judul -->
             <div class="text-center">
                 <h2 class="text-[#DB6E00] text-shadow-custom flex flex-col">
-                    <span class="text-white text-[52px] font-extrabold" data-aos="fade-up">About Me</span>
-                    <span class="text-[24px] gradient-text-under-title" data-aos="fade-up">Transforming ideas into
+                    <span class="text-white text-[30px] font-extrabold mt-[140px]" data-aos="fade-up">About Me</span>
+                    <span class="text-[16px] gradient-text-under-title" data-aos="fade-up">Transforming ideas into
                         digital
                         experiences</span>
                 </h2>
             </div>
             <!-- Konten Dua Bagian -->
-            <div class="flex items-center justify-between w-full max-w-[1450px]">
+            <div class="flex items-center flex-col justify-between w-full max-w-[1450px]">
+                <!-- Konten Kanan -->
+                <div class="flex-1 flex justify-center items-center" data-aos="fade-left">
+                    <img src="../public/images/myphoto.png" alt="My Photo" class="w-[200px] rounded-[50px]">
+                </div>
                 <!-- Konten Kiri -->
                 <div class="flex-1 flex justify-center items-center p-10" data-aos="fade-right">
                     <div>
-                        <div class="space-y-[-30px]">
-                            <h2 class="text-white font-extrabold text-[52px]">Hello, I'm</h2>
-                            <h2 class="text-white font-extrabold text-[52px]">Muhammad Zadid</h2>
+                        <div class="space-y-[-10px]">
+                            <h2 class="text-white font-extrabold text-[28px]">Hello, I'm</h2>
+                            <h2 class="text-white font-extrabold text-[28px]">Muhammad Zadid</h2>
                         </div>
-                        <p class="text-white text-[18px] leading-[30px]">
-                            A Software Engineering student interested in web development. I focus on creating responsive
+                        <p class="text-white font-thin text-[16px] leading-[25px]">
+                            A Software Engineering student interested in web development. I focus on creating
+                            responsive
                             interfaces and providing innovative solutions in every project.
                         </p>
                         <!-- Social Media Links -->
@@ -166,21 +174,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- Konten Kanan -->
-                <div class="flex-1 flex justify-center items-center" data-aos="fade-left">
-                    <img src="../public/images/myphoto.png" alt="My Photo" class="w-[350px] rounded-[50px]">
-                </div>
             </div>
         </section>
         <!-- About Me Section End -->
 
         <!-- Portfolio Showcase Section Start -->
-        <section id="portfolio" class="bg-cover bg-center h-screen hero flex flex-col items-center justify-center">
+        <section id="portfolio"
+            class="bg-cover bg-center hero flex flex-col items-center justify-center mt-[80px]">
             <!-- Judul -->
-            <div class="text-center">
+            <div class="text-center mt-[58px]">
                 <h2 class="text-[#DB6E00] text-shadow-custom flex flex-col">
-                    <span class="text-white text-[52px] font-extrabold" data-aos="fade-up">Portfolio Showcase</span>
-                    <span class="text-[24px] gradient-text-under-title w-[800px]" data-aos="fade-up">Explore my journey
+                    <span class="text-white text-[28px] font-extrabold" data-aos="fade-up">Portfolio Showcase</span>
+                    <span class="text-[16px] gradient-text-under-title w-[350px] text-center" data-aos="fade-up">Explore
+                        my
+                        journey
                         through projects.
                         Each section represents a milestone in my continuous learning path.</span>
                 </h2>
@@ -194,7 +201,8 @@
                     <img src="../public/images/projek1.png" alt="Project Image" class="w-full h-[200px] object-cover">
                     <div class="p-6">
                         <h3 class="text-white text-xl font-bold mb-2">Modern Coffee Shop Website Design</h3>
-                        <p class="text-white text-md mb-4">I crafted a responsive website for Kenangan Senja, showcasing
+                        <p class="text-white text-md mb-4">I crafted a responsive website for Kenangan Senja,
+                            showcasing
                             its menu, location, and a design that reflects its warm, nostalgic vibe.</p>
                     </div>
                 </div>
@@ -204,7 +212,8 @@
                     <img src="../public/images/projek4.png" alt="Project Image" class="w-full h-[200px] object-cover">
                     <div class="p-6">
                         <h3 class="text-white text-xl font-bold mb-2">Simple Movie Website</h3>
-                        <p class="text-white text-md mb-4">Where I fetch data from the Internet Movie Database (IMDb)
+                        <p class="text-white text-md mb-4">Where I fetch data from the Internet Movie Database
+                            (IMDb)
                             for this website.</p>
                     </div>
                 </div>
@@ -223,7 +232,7 @@
         <!-- Portfolio Showcase Section End -->
 
         <!-- Footer Section Start -->
-        <footer class="bg-gray-900 text-gray-400 py-6">
+        <footer class="bg-gray-900 text-gray-400 py-6 mt-[80px]">
             <div class="max-w-4xl mx-auto text-center">
                 <p class="mb-2">&copy; 2025 zdd. All Rights Reserved.</p>
                 <p>
