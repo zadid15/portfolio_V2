@@ -158,5 +158,5 @@ window.onload = () => {
         });
       },
     });
-  }, 1); // Menunggu 3 detik
+  }, 3500); // Menunggu 3 detik
 };

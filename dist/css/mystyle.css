@@ -84,7 +84,7 @@ body {
 #typed-output {
     color: white;
     /* Warna teks */
-    font-size: 24px;
+    font-size: 18px;
     /* Ukuran font yang lebih besar untuk keterbacaan */
     display: inline;
     /* Agar kursor bisa muncul di samping teks */

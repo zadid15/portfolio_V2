@@ -664,6 +664,14 @@ video {
   margin-top: 80px;
 }
 
+.mt-\[-20px\] {
+  margin-top: -20px;
+}
+
+.mt-\[-10px\] {
+  margin-top: -10px;
+}
+
 .flex {
   display: flex;
 }
@@ -960,6 +968,26 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[34px\] {
+  font-size: 34px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[38px\] {
+  font-size: 38px;
+}
+
+.text-\[3px\] {
+  font-size: 3px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -997,6 +1025,10 @@ video {
 
 .text-white\/70 {
   color: rgb(255 255 255 / 0.7);
+}
+
+.text-\[px\] {
+  color: px;
 }
 
 .shadow-lg {
