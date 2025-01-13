@@ -656,12 +656,8 @@ video {
   margin-top: 100px;
 }
 
-.mt-\[10px\] {
-  margin-top: 10px;
-}
-
-.mt-\[180px\] {
-  margin-top: 180px;
+.mt-\[210px\] {
+  margin-top: 210px;
 }
 
 .mt-\[56px\] {
@@ -674,26 +670,6 @@ video {
 
 .mt-\[80px\] {
   margin-top: 80px;
-}
-
-.mt-\[190px\] {
-  margin-top: 190px;
-}
-
-.mt-\[195px\] {
-  margin-top: 195px;
-}
-
-.mt-\[1px\] {
-  margin-top: 1px;
-}
-
-.mt-\[200px\] {
-  margin-top: 200px;
-}
-
-.mt-\[210px\] {
-  margin-top: 210px;
 }
 
 .flex {

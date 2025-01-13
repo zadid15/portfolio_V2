@@ -99,7 +99,6 @@ window.onload = () => {
             "Building the Future of Tech",
             "Problem Solver",
             "Software Engineering Student",
-            "WONG TULUS"
           ],
           typeSpeed: 80,
           backSpeed: 40,
