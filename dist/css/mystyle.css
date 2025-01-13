@@ -29,6 +29,7 @@ body {
     transition: background-color 1s ease;
     /* Transisi halus untuk warna background */
     font-family: 'Outfit', sans-serif;
+    width: 100%;
 }
 
 /* Tambahkan gaya animasi */
@@ -84,8 +85,6 @@ body {
 #typed-output {
     color: white;
     /* Warna teks */
-    font-size: 18px;
-    /* Ukuran font yang lebih besar untuk keterbacaan */
     display: inline;
     /* Agar kursor bisa muncul di samping teks */
 }
@@ -132,7 +131,6 @@ body {
 
 #typed-text-2 {
     color: white;
-    font-size: 18px;
     display: inline;
 }
 
@@ -153,7 +151,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px 20px;
-    font-size: 15px;
     color: #d2d0d0;
     background-color: black;
     border-radius: 10px;

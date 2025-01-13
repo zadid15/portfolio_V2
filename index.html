@@ -23,48 +23,49 @@
     <div id="preloader"
         class="animate-gradient flex flex-col items-center justify-center h-screen bg-gray-100 fixed inset-0 z-50 bg-[#210D4F]">
         <div class="text-center">
-            <div class="flex items-center" style="gap: 20px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
+            <div class="flex items-center gap-4 sm:gap-8" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
                 <a href="https://github.com/zadid15" target="_blank"
-                    class="github-icon text-white hover:text-gray-300 text-[30px] font-bold">
-                    <i class="fab fa-github fa-md"></i> <!-- Ikon GitHub -->
+                    class="github-icon text-white hover:text-gray-300 text-[35px] sm:text-[50px] md:text-[60px] lg:text-[65px] font-bold">
+                    <i class="fab fa-github fa-md"></i>
                 </a>
-                <h1 class="text-white welcome-text text-[30px] font-bold">Welcome To My</h1>
-                <a href="#" target="_blank" class="codepen-icon text-white hover:text-gray-300 text-[30px] font-bold">
-                    <i class="fas fa-code fa-md"></i> <!-- Ikon Kode -->
+                <h1 class="text-white welcome-text text-[35px] sm:text-[50px] md:text-[60px] lg:text-[65px] font-bold">
+                    Welcome To My</h1>
+                <a href="#" target="_blank"
+                    class="codepen-icon text-white hover:text-gray-300 text-[35px] sm:text-[50px] md:text-[60px] lg:text-[65px] font-bold">
+                    <i class="fas fa-code fa-md"></i>
                 </a>
             </div>
-            <h1 class="mt-[-10px] gradient-text portfolio-text text-[30px] font-bold">Portfolio Website</h1>
-            <p id="typed-output"></p>
+            <h1
+                class="mt-[-12px] sm:mt-[-25px] md:mt-[-30px] lg:mt-[-30px]  gradient-text portfolio-text text-[35px] sm:text-[50px] md:text-[60px] lg:text-[65px] font-bold">
+                Portfolio Website</h1>
+            <p id="typed-output" class="text-[20px] sm:text-[24px] md:text-[26px] lg:text-[30px] font-light"></p>
         </div>
     </div>
 
     <div id="particles-js" data-aos="fade"></div>
 
     <div id="content" class="hidden">
-        <!-- Navigasi -->
-        <nav class="fixed top-0 w-full bg-transparent backdrop-blur-sm text-white z-50">
+        <!-- Navbar Start -->
+        <nav class="fixed top-0 w-full bg-transparent backdrop-blur-sm text-white z-50" data-aos="fade-down">
             <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo -->
                     <div class="flex-shrink-0">
-                        <a href="#" class="text-xl font-bold text-white">
+                        <a href="#" class="text-[18px] sm:text-[18px] font-bold text-white">
                             ZDD
                         </a>
                     </div>
-
                     <!-- Menu Utama (Desktop) -->
                     <div class="hidden md:flex space-x-8">
                         <a href="#home" class="text-white hover:text-gray-500">Home</a>
                         <a href="#about" class="text-white hover:text-gray-500">About</a>
                         <a href="#portfolio" class="text-white hover:text-gray-500">Portfolio</a>
                     </div>
-
                     <!-- Tombol Hamburger (Mobile) -->
                     <div class="relative md:hidden">
-                        <button id="hamburger" class="text-white text-2xl z-20">
+                        <button id="hamburger" class="text-white text-2xl sm:text-2xl z-20">
                             <i class="fas fa-bars"></i>
                         </button>
-
                         <!-- Mobile Menu -->
                         <div id="mobile-menu"
                             class="hidden absolute top-full right-0 w-[250px] bg-black/80 backdrop-blur-lg flex flex-col space-y-4 py-4 px-4 mt-5 rounded-lg shadow-lg border border-gray-700 z-10">
@@ -80,101 +81,121 @@
                 </div>
             </div>
         </nav>
-
+        <!-- Navbar End -->
 
         <!-- Hero Section Start -->
-        <section id="home" class="bg-cover bg-center items-center justify-center flex-col flex">
+        <section id="home"
+            class="w-full flex flex-col items-center justify-center sm:flex-row max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-0">
             <!-- Bagian Kiri: Konten Teks -->
-            <div class="space-y-[42px]">
+            <div
+                class="xl:mt-[150px] flex-1 space-y-[42px] p-2 sm:space-y-[40px] md:space-y-[40px] lg:space-y-[50px] xl:mr-[250px]">
                 <div class="space-y-[-5px]">
-                    <div class="space-y-[-18px] text-[36px]">
+                    <div
+                        class="space-y-[-18px] sm:space-y-[-15px] md:space-y-[-20px] lg:space-y-[-25px] xl:space-y-[-45px] text-[36px] sm:text-[34px] md:text-[40px] lg:text-[50px] xl:text-[70px]">
                         <h2 class="text-white font-black text-shadow mt-[100px]" data-aos="fade-right">Fullstack</h2>
                         <h2 class="text-[#DB6E00] font-black gradient-text" data-aos="fade-left">Developer</h2>
                     </div>
                     <div class="absolute">
-                        <div id="typed-text-2" class="space-y-[-5px] text-white text-shadow-custom"
+                        <div id="typed-text-2"
+                            class="space-y-[-5px] text-[18px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[30px] text-white text-shadow-custom"
                             data-aos="fade-right"></div>
                     </div>
                 </div>
-                <div class="w-[320px]">
-                    <p class="text-white/70 text-shadow-custom font-thin text-[18px]" data-aos="fade">
+                <div>
+                    <p class="text-white/70 font-thin text-[18px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px]"
+                        data-aos="fade">
                         Creating Innovative, Functional and User-Friendly Websites for Digital Solutions.
                     </p>
                 </div>
                 <div class="flex space-x-4" style="margin-top: 15px;">
-                    <a href="#portfolio" class="btn-modern" data-aos="fade-right">
+                    <a href="#portfolio"
+                        class="btn-modern text-[15px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px]"
+                        data-aos="fade-right">
                         <span class="me-[10px]">Projects</span>
                         <i class="fas fa-folder-open"></i>
                     </a>
-                    <a href="https://wa.me/6285655639206" target="_blank" class="btn-modern" data-aos="fade-left">
+                    <a href="https://wa.me/6285655639206" target="_blank"
+                        class="btn-modern text-[15px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px]"
+                        data-aos="fade-left">
                         <span class="me-[10px]">Contact</span>
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-                <div class="flex space-x-[20px] ms-[10px]" data-aos="fade" data-aos-duration="3000">
-                    <a href="https://github.com" target="_blank"
-                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2rem]">
+                <div class="flex space-x-[20px] sm:space-x-[10px] md:space-x-[15px] lg:space-x-[20px] xl:space-x-[20px] ms-[10px]"
+                    data-aos="fade" data-aos-duration="3000">
+                    <a href="https://github.com/zadid15" target="_blank"
+                        class="mt-[-35px] sm:mt-[-35px] md:mt-[-30px] text-white hover:text-[#210D4F] text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.3rem] xl:text-[3rem]">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://instagram.com" target="_blank"
-                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2rem]">
+                    <a href="https://instagram.com/izadid_" target="_blank"
+                        class="mt-[-35px] sm:mt-[-35px] md:mt-[-30px] text-white hover:text-[#210D4F] text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.3rem] xl:text-[3rem]">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://facebook.com" target="_blank"
-                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2rem]">
+                    <a href="https://facebook.com/muhammad.zadid.3139" target="_blank"
+                        class="mt-[-35px] sm:mt-[-35px] md:mt-[-30px] text-white hover:text-[#210D4F] text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.3rem] xl:text-[3rem]">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank"
-                        class="mt-[-35px] text-white hover:text-[#210D4F] text-[2rem]">
+                    <a href="https://linkedin.com/in/muhammad-zadid" target="_blank"
+                        class="mt-[-35px] sm:mt-[-35px] md:mt-[-30px] text-white hover:text-[#210D4F] text-[2rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.3rem] xl:text-[3rem]">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
             </div>
-            <div class="flex items-center ms-[14px] justify-center w-[300px]" data-aos="fade-left">
-                <img src="dist/images/xero-code.gif" alt="GIF Animasi">
+            <!-- Bagian Kanan: GIF -->
+            <div class="xl:mt-[150px]  flex-1 items-center text-center sm:ml-[80px] md:ml-[80px] lg:ml-[80px] xl:ml-[80px]"
+                data-aos="fade-left">
+                <img src="dist/images/xero-code.gif" alt="GIF Animasi"
+                    class="w-[240px] sm:w-[255px] md:w-[300px] lg:w-[360px] xl:w-[500px]">
             </div>
-
-
         </section>
         <!-- Hero Section End -->
 
         <!-- About Me Section Start -->
-        <section id="about" class="bg-cover bg-center flex flex-col items-center justify-center mt-[40px]">
+        <section id="about"
+            class="xl:mt-[150px] w-full flex flex-col items-center justify-center max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-[40px]">
             <!-- Judul -->
-            <div class="text-center">
+            <div class="xl:mt-[80px] text-center">
                 <h2 class="text-[#DB6E00] text-shadow-custom flex flex-col">
-                    <span class="text-white text-[30px] font-extrabold mt-[56px]" data-aos="fade-up">About Me</span>
-                    <span class="text-[16px] gradient-text-under-title" data-aos="fade-up">Transforming ideas into
-                        digital
-                        experiences</span>
+                    <span
+                        class="text-white text-[30px] sm:text-[20px] md:text-[28px] lg:text-[30px] xl:text-[45px] font-extrabold mt-[56px]"
+                        data-aos="fade-up">About Me</span>
+                    <span
+                        class="text-[16px] sm:text-[14px] md:text-[18px] lg:text-[18px] xl:text-[20px] gradient-text-under-title"
+                        data-aos="fade-up">Building connections through creative digital experiences.</span>
                 </h2>
             </div>
             <!-- Konten Dua Bagian -->
-            <div class="flex items-center flex-col justify-between w-full max-w-[1450px]">
-                <!-- Konten Kanan -->
-                <div class="flex-1 flex justify-center items-center" data-aos="fade-left">
-                    <img src="dist/images/myphoto.png" alt="My Photo" class="w-[200px] rounded-[50px]">
-                </div>
+            <div class="flex flex-col sm:flex-row items-center justify-between w-full">
                 <!-- Konten Kiri -->
-                <div class="flex-1 flex justify-center items-center p-10" data-aos="fade-right">
-                    <div>
-                        <div class="space-y-[-10px]">
-                            <h2 class="text-white font-extrabold text-[28px]">Hello, I'm</h2>
-                            <h2 class="text-white font-extrabold text-[28px]">Muhammad Zadid</h2>
+                <div class="flex-1 flex order-2 sm:order-1" data-aos="fade-right">
+                    <div class="px-1">
+                        <div class="space-y-[-10px] sm:space-y-[-10px] md:space-y-[-10px] lg:space-y-[-15px]">
+                            <h2
+                                class="text-white font-extrabold text-[28px] sm:text-[26px] md:text-[34px] lg:text-[40px] xl:text-[60px]">
+                                Hello, I'm</h2>
+                            <h2
+                                class="text-white font-extrabold text-[28px] sm:text-[26px] md:text-[34px] lg:text-[40px] xl:text-[60px]">
+                                Muhammad Zadid</h2>
                         </div>
-                        <p class="text-white font-thin text-[16px] leading-[25px]">
-                            A Software Engineering student interested in web development. I focus on creating
-                            responsive
+                        <p
+                            class="w-[320px] sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[700px] text-white font-thin text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[24px] leading-[25px] sm:leading-[25px] md:leading-[25px] lg:leading-[30px] xl:leading-[35px]">
+                            A Software Engineering student interested in web development. I focus on creating responsive
                             interfaces and providing innovative solutions in every project.
                         </p>
                         <!-- Social Media Links -->
                         <div class="flex space-x-3 mt-4">
-                            <a href="dist/assets/mycv.pdf" class="btn-modern">
+                            <a href="dist/assets/mycv.pdf"
+                                class="btn-modern text-[15px] sm:text-[12px] md:text-[16px] lg:text-[16px] xl:text-[18px]">
                                 <span class="me-[10px]">Download CV</span>
                                 <i class="fas fa-download"></i>
                             </a>
                         </div>
                     </div>
+                </div>
+                <!-- Konten Kanan -->
+                <div class="mb-[30px] flex-1 flex justify-center items-center order-1 sm:order-2" data-aos="fade-left">
+                    <img src="dist/images/myphoto.png" alt="My Photo"
+                        class="w-[200px] sm:w-[180px] md:w-[240px] lg:w-[280px] xl:w-[350px] rounded-[50px]">
                 </div>
             </div>
         </section>
@@ -182,50 +203,69 @@
 
         <!-- Portfolio Showcase Section Start -->
         <section id="portfolio"
-            class="bg-cover bg-center hero flex flex-col items-center justify-center mt-[80px]">
+            class="flex flex-col md:mb-[120px] xl:mb-[150px] items-center justify-center w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-[180px]">
             <!-- Judul -->
-            <div class="text-center mt-[58px]">
+            <div class="text-center mt-[58px] xl:mt-[10px]">
                 <h2 class="text-[#DB6E00] text-shadow-custom flex flex-col">
-                    <span class="text-white text-[28px] font-extrabold" data-aos="fade-up">Portfolio Showcase</span>
-                    <span class="text-[16px] gradient-text-under-title w-[350px] text-center" data-aos="fade-up">Explore
-                        my
-                        journey
-                        through projects.
-                        Each section represents a milestone in my continuous learning path.</span>
+                    <span
+                        class="text-white text-[28px] sm:text-[20px] md:text-[28px] lg:text-[30px] xl:text-[45px] font-extrabold"
+                        data-aos="fade-up">Portfolio
+                        Showcase</span>
+                    <span
+                        class="text-[16px] sm:text-[14px] sm:leading-[18px] md:leading-[20px] lg:leading-[22px] md:text-[18px] lg:text-[18px] xl:text-[20px] gradient-text-under-title w-[350px] sm:w-[300px] md:w-[400px] xl:w-[600px] lg:w-[500px] text-center"
+                        data-aos="fade-up">From concept to creation, my projects showcase a journey of exploration and
+                        innovation.</span>
                 </h2>
             </div>
             <!-- Portfolio Cards Start -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5 max-w-[1450px] mx-auto"
                 data-aos="fade-up">
                 <!-- Card 1 -->
-                <div class="bg-[#272727] p-3  shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                    data-aos="fade-right">
-                    <img src="dist/images/projek1.png" alt="Project Image" class="w-full h-[200px] object-cover">
-                    <div class="p-6">
-                        <h3 class="text-white text-xl font-bold mb-2">Modern Coffee Shop Website Design</h3>
-                        <p class="text-white text-md mb-4">I crafted a responsive website for Kenangan Senja,
+                <div class="bg-[#272727] md:p-3 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                    data-aos="fade-right sm:fade-up lg:fade-left">
+                    <img src="dist/images/projek1.png" alt="Project Image"
+                        class="w-full h-[200px] sm:h-[120px] md:h-[180px] lg:h-[200px] xl:h-[250px] object-cover">
+                    <div class="p-6 sm:p-3">
+                        <h3
+                            class="text-white text-xl sm:text-[16px] md:text-[18px] xl:text-[24px] font-medium mb-2 sm:leading-[20px] md:leading-[22px] lg:leading-[24px] xl:leading-[26px]">
+                            Modern Coffee
+                            Shop Website Design</h3>
+                        <p
+                            class="text-white text-md sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-extralight mb-4">
+                            I crafted a responsive website for Kenangan
+                            Senja,
                             showcasing
                             its menu, location, and a design that reflects its warm, nostalgic vibe.</p>
                     </div>
                 </div>
-                <!-- Card 1 -->
-                <div class="bg-[#272727] p-3  shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                    data-aos="fade">
-                    <img src="dist/images/projek4.png" alt="Project Image" class="w-full h-[200px] object-cover">
-                    <div class="p-6">
-                        <h3 class="text-white text-xl font-bold mb-2">Simple Movie Website</h3>
-                        <p class="text-white text-md mb-4">Where I fetch data from the Internet Movie Database
+                <!-- Card 2 -->
+                <div class="bg-[#272727] md:p-3 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                    data-aos="fade sm:fade-up">
+                    <img src="dist/images/projek4.png" alt="Project Image"
+                        class="w-full h-[200px] sm:h-[120px] md:h-[180px] lg:h-[200px] xl:h-[250px] object-cover">
+                    <div class="p-6 sm:p-3">
+                        <h3 class="text-white text-xl sm:text-[16px] md:text-[18px] xl:text-[24px] font-medium mb-2">
+                            Simple Movie Website</h3>
+                        <p
+                            class="text-white text-md sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-extralight mb-4">
+                            Where I fetch data from the Internet Movie
+                            Database
                             (IMDb)
                             for this website.</p>
                     </div>
                 </div>
-                <!-- Card 1 -->
-                <div class="bg-[#272727] p-3  shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                    data-aos="fade-left">
-                    <img src="dist/images/projek3.png" alt="Project Image" class="w-full h-[200px] object-cover">
-                    <div class="p-6">
-                        <h3 class="text-white text-xl font-bold mb-2">Gallery Website</h3>
-                        <p class="text-white text-md mb-4">I love Avengers movies, so I created this website.</p>
+                <!-- Card 3 -->
+                <div class="bg-[#272727] md:p-3 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                    data-aos="fade-left sm:fade-up lg:fade-right">
+                    <img src="dist/images/projek3.png" alt="Project Image"
+                        class="w-full h-[200px] sm:h-[120px] md:h-[180px] lg:h-[200px] xl:h-[250px] object-cover">
+                    <div class="p-6 sm:p-3">
+                        <h3 class="text-white text-xl sm:text-[16px] md:text-[18px] xl:text-[24px] font-medium mb-2">
+                            Gallery Website</h3>
+                        <p
+                            class="text-white text-md sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-extralight mb-4">
+                            I love Avengers movies, so I created this
+                            website.</p>
                     </div>
                 </div>
             </div>
@@ -236,26 +276,28 @@
         <!-- Footer Section Start -->
         <footer class="bg-gray-900 text-gray-400 py-6 mt-[80px]">
             <div class="max-w-4xl mx-auto text-center">
-                <p class="mb-2">&copy; 2025 zdd. All Rights Reserved.</p>
+                <p class="mb-2 sm:mb-0 text-[16px] sm:text-[14px]">&copy; 2025 zdd. All Rights Reserved.</p>
                 <p>
-                    <a href="#home" class="text-gray-400 hover:text-white transition">Home</a> |
-                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a> |
-                    <a href="#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a>
+                    <a href="#home"
+                        class="text-[16px] sm:text-[14px] text-gray-400 hover:text-white transition">Home</a> |
+                    <a href="#about"
+                        class="text-[16px] sm:text-[14px] text-gray-400 hover:text-white transition">About</a> |
+                    <a href="#portfolio"
+                        class="text-[16px] sm:text-[14px] text-gray-400 hover:text-white transition">Portfolio</a>
                 </p>
-                <div class="mt-4">
+                <div class="mt-4 sm:mt-0">
                     <a href="https://www.linkedin.com/in/muhammad-zadid" target="_blank"
-                        class="text-gray-400 hover:text-white mx-2 transition">
+                        class="text-[16px] sm:text-[14px] text-gray-400 hover:text-white mx-2 transition">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="https://github.com/zadid15" target="_blank"
-                        class="text-gray-400 hover:text-white mx-2 transition">
+                        class="text-[16px] sm:text-[14px] text-gray-400 hover:text-white mx-2 transition">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>
         </footer>
         <!-- Footer Section End -->
-
     </div>
 
     <script src="dist/js/script.js"></script>

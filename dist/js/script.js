@@ -45,7 +45,7 @@ window.onload = () => {
 
   // Inisialisasi Typed.js sebelum menyembunyikan preloader
   const options = {
-    strings: ["Zadid Ganteng Banget 😎"],
+    strings: ["Wayae Wong Tulus Tampil !!!"],
     typeSpeed: 70, // Kecepatan mengetik dalam milidetik
     loop: false, // Ulangi mengetik
     showCursor: false, // Tampilkan kursor
@@ -93,13 +93,20 @@ window.onload = () => {
 
         // Inisialisasi Typed.js setelah preloader selesai
         const options2 = {
-          strings: ["Code and Software Engineering Student"],
-          typeSpeed: 50,
-          backSpeed: 25,
+          strings: [
+            "Innovative Solutions",
+            "Creating Impactful Web Apps",
+            "Building the Future of Tech",
+            "Problem Solver",
+            "Software Engineering Student",
+            "WONG TULUS"
+          ],
+          typeSpeed: 80,
+          backSpeed: 40,
           loop: true,
-          cursorChar: "|", // Karakter kursor
-          showCursor: true, // Tampilkan kursor
-          cursorClass: "typed-cursor-2", // Kelas khusus kursor
+          cursorChar: "|",
+          showCursor: true,
+          cursorClass: "typed-cursor-2",
         };
 
         new Typed("#typed-text-2", options2);
