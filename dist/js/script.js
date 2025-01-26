@@ -164,5 +164,5 @@ window.onload = () => {
         });
       },
     });
-  }, 3500); // Menunggu 3 detik
+  }, 0); // Menunggu 3 detik
 };
