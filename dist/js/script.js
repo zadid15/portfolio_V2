@@ -45,8 +45,8 @@ window.onload = () => {
 
   // Inisialisasi Typed.js sebelum menyembunyikan preloader
   const options = {
-    strings: ["Wayae Wong Tulus Tampil !!!"],
-    typeSpeed: 70, // Kecepatan mengetik dalam milidetik
+    strings: ["ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ"],
+    typeSpeed: 80, // Kecepatan mengetik dalam milidetik
     loop: false, // Ulangi mengetik
     showCursor: false, // Tampilkan kursor
     cursorChar: "|", // Karakter kursor
@@ -120,7 +120,7 @@ window.onload = () => {
         particlesJS("particles-js", {
           particles: {
             number: {
-              value: 30,
+              value: 5,
               density: {
                 enable: true,
                 value_area: 800,
@@ -130,11 +130,11 @@ window.onload = () => {
               type: "circle", // Bentuk partikel
             },
             opacity: {
-              value: 0.5,
+              value: 0.2,
               random: true, // Opasitas acak
             },
             size: {
-              value: 3,
+              value: 100,
               random: true,
             },
             move: {
@@ -164,5 +164,5 @@ window.onload = () => {
         });
       },
     });
-  }, 3500); // Menunggu 3 detik
+  }, 7000); // Menunggu 3 detik
 };
