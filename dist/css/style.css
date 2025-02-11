@@ -656,10 +656,6 @@ video {
   margin-top: 100px;
 }
 
-.mt-\[210px\] {
-  margin-top: 210px;
-}
-
 .mt-\[56px\] {
   margin-top: 56px;
 }
@@ -708,10 +704,6 @@ video {
   width: 250px;
 }
 
-.w-\[320px\] {
-  width: 320px;
-}
-
 .w-\[350px\] {
   width: 350px;
 }
@@ -730,6 +722,14 @@ video {
 
 .max-w-\[1450px\] {
   max-width: 1450px;
+}
+
+.max-w-\[320px\] {
+  max-width: 320px;
+}
+
+.max-w-\[90\%\] {
+  max-width: 90%;
 }
 
 .max-w-screen-2xl {
@@ -888,11 +888,6 @@ video {
   padding: 1.5rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -944,10 +939,6 @@ video {
   font-size: 18px;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
-}
-
 .text-\[28px\] {
   font-size: 28px;
 }
@@ -958,10 +949,6 @@ video {
 
 .text-\[30px\] {
   font-size: 30px;
-}
-
-.text-\[35px\] {
-  font-size: 35px;
 }
 
 .text-\[36px\] {
@@ -1003,6 +990,18 @@ video {
 
 .leading-\[25px\] {
   line-height: 25px;
+}
+
+.leading-\[px\] {
+  line-height: px;
+}
+
+.leading-\[30px\] {
+  line-height: 30px;
+}
+
+.leading-\[85px\] {
+  line-height: 85px;
 }
 
 .text-\[\#DB6E00\] {
@@ -1131,6 +1130,10 @@ video {
     margin-top: -35px;
   }
 
+  .sm\:mt-\[0\] {
+    margin-top: 0;
+  }
+
   .sm\:h-\[120px\] {
     height: 120px;
   }
@@ -1145,6 +1148,10 @@ video {
 
   .sm\:w-\[300px\] {
     width: 300px;
+  }
+
+  .sm\:max-w-\[400px\] {
+    max-width: 400px;
   }
 
   .sm\:grid-cols-2 {
@@ -1165,16 +1172,16 @@ video {
     margin-left: calc(10px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .sm\:space-y-\[-10px\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(-10px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(-10px * var(--tw-space-y-reverse));
-  }
-
   .sm\:space-y-\[-15px\] > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(-15px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(-15px * var(--tw-space-y-reverse));
+  }
+
+  .sm\:space-y-\[-5px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(-5px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(-5px * var(--tw-space-y-reverse));
   }
 
   .sm\:space-y-\[40px\] > :not([hidden]) ~ :not([hidden]) {
@@ -1248,6 +1255,10 @@ video {
   .sm\:leading-\[25px\] {
     line-height: 25px;
   }
+
+  .sm\:leading-\[2px\] {
+    line-height: 2px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1293,10 +1304,10 @@ video {
     margin-left: calc(15px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-y-\[-10px\] > :not([hidden]) ~ :not([hidden]) {
+  .md\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
-    margin-top: calc(-10px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(-10px * var(--tw-space-y-reverse));
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   }
 
   .md\:space-y-\[-20px\] > :not([hidden]) ~ :not([hidden]) {
@@ -1309,6 +1320,12 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(40px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(40px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-\[-10px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(-10px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(-10px * var(--tw-space-y-reverse));
   }
 
   .md\:p-3 {
@@ -1399,12 +1416,6 @@ video {
     margin-left: calc(20px * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:space-y-\[-15px\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(-15px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(-15px * var(--tw-space-y-reverse));
-  }
-
   .lg\:space-y-\[-25px\] > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(-25px * calc(1 - var(--tw-space-y-reverse)));
@@ -1415,6 +1426,12 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(50px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(50px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-\[-15px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(-15px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(-15px * var(--tw-space-y-reverse));
   }
 
   .lg\:px-8 {
@@ -1458,6 +1475,10 @@ video {
     font-size: 65px;
   }
 
+  .lg\:text-\[60px\] {
+    font-size: 60px;
+  }
+
   .lg\:leading-\[22px\] {
     line-height: 22px;
   }
@@ -1466,8 +1487,28 @@ video {
     line-height: 24px;
   }
 
+  .lg\:leading-\[2px\] {
+    line-height: 2px;
+  }
+
+  .lg\:leading-\[28px\] {
+    line-height: 28px;
+  }
+
   .lg\:leading-\[30px\] {
     line-height: 30px;
+  }
+
+  .lg\:leading-\[40px\] {
+    line-height: 40px;
+  }
+
+  .lg\:leading-\[80px\] {
+    line-height: 80px;
+  }
+
+  .lg\:text-\[px\] {
+    color: px;
   }
 }
 
@@ -1476,8 +1517,12 @@ video {
     margin-bottom: 150px;
   }
 
-  .xl\:ml-\[80px\] {
-    margin-left: 80px;
+  .xl\:mb-\[50px\] {
+    margin-bottom: 50px;
+  }
+
+  .xl\:ml-\[150px\] {
+    margin-left: 150px;
   }
 
   .xl\:mr-\[250px\] {
@@ -1504,16 +1549,12 @@ video {
     width: 350px;
   }
 
-  .xl\:w-\[500px\] {
-    width: 500px;
+  .xl\:w-\[450px\] {
+    width: 450px;
   }
 
   .xl\:w-\[600px\] {
     width: 600px;
-  }
-
-  .xl\:w-\[700px\] {
-    width: 700px;
   }
 
   .xl\:space-x-\[20px\] > :not([hidden]) ~ :not([hidden]) {
@@ -1522,15 +1563,21 @@ video {
     margin-left: calc(20px * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .xl\:space-y-\[-30px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(-30px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(-30px * var(--tw-space-y-reverse));
+  }
+
   .xl\:space-y-\[-45px\] > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(-45px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(-45px * var(--tw-space-y-reverse));
   }
 
-  .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .xl\:text-\[18px\] {
@@ -1569,7 +1616,15 @@ video {
     line-height: 26px;
   }
 
-  .xl\:leading-\[35px\] {
-    line-height: 35px;
+  .xl\:leading-\[30px\] {
+    line-height: 30px;
+  }
+
+  .xl\:leading-\[32px\] {
+    line-height: 32px;
+  }
+
+  .xl\:text-\[px\] {
+    color: px;
   }
 }
