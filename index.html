@@ -23,6 +23,9 @@
     <!-- Preloader -->
     <div id="preloader"
         class="animate-gradient flex flex-col items-center justify-center h-screen bg-gray-100 fixed inset-0 z-50 bg-[#210D4F]">
+        <audio id="preloaderAudio" autoplay>
+            <source src="dist/audio/preloader.mp3" type="audio/mp3">
+        </audio>
         <div class="text-center">
             <div class="flex items-center gap-4 sm:gap-8" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
                 <a href="https://github.com/zadid15" target="_blank"
@@ -40,6 +43,7 @@
                 class="mt-[-12px] sm:mt-[-25px] md:mt-[-30px] lg:mt-[-30px]  gradient-text portfolio-text text-[28px] sm:text-[50px] md:text-[60px] lg:text-[65px] font-bold">
                 Portfolio Website</h1>
             <p id="typed-output" class="text-[18px] sm:text-[24px] md:text-[26px] lg:text-[30px] font-light"></p>
+            <p class="mt-10 click-me text-[18px] sm:text-[24px] md:text-[26px] lg:text-[30px] font-bold text-white">Click Me !</p>
         </div>
     </div>
 
@@ -78,7 +82,6 @@
                                 class="text-white hover:text-black px-4 py-2 rounded-lg hover:bg-white">Portfolio</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </nav>
@@ -153,7 +156,8 @@
 
         <!-- About Me Section Start -->
         <section id="about"
-            class="xl:mt-[150px] w-full flex flex-col items-center justify-center max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-[100px] sm:mt-[0]" style="min-height: 80vh;">
+            class="xl:mt-[150px] w-full flex flex-col items-center justify-center max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-[100px] sm:mt-[0]"
+            style="min-height: 80vh;">
             <!-- Judul -->
             <div class="xl:mt-[80px] text-center mb-[30px] xl:mb-[50px]">
                 <h2 class="text-[#DB6E00] text-shadow-custom flex flex-col">
@@ -162,7 +166,8 @@
                         data-aos="fade-up" data-aos-offset="20">About Me</span>
                     <span
                         class="text-[16px] sm:text-[14px] md:text-[18px] lg:text-[18px] xl:text-[20px] gradient-text-under-title"
-                        data-aos="fade-up" data-aos-offset="20">Building connections through creative digital experiences.</span>
+                        data-aos="fade-up" data-aos-offset="20">Building connections through creative digital
+                        experiences.</span>
                 </h2>
             </div>
             <!-- Konten Dua Bagian -->
@@ -170,15 +175,19 @@
                 <!-- Konten Kiri -->
                 <div class="flex-1 flex order-2 sm:order-1" data-aos="fade-right" data-aos-offset="120">
                     <div class="px-4 max-w-[90%] mx-auto">
-                        <div class="space-y-[-10px] sm:space-y-[-5px] md:space-y-[-10px] lg:space-y-[-15px] xl:space-y-[-30px]">
-                            <h2 class="text-white font-extrabold text-[28px] sm:text-[26px] md:text-[34px] lg:text-[40px] xl:text-[60px]">
+                        <div
+                            class="space-y-[-10px] sm:space-y-[-5px] md:space-y-[-10px] lg:space-y-[-15px] xl:space-y-[-30px]">
+                            <h2
+                                class="text-white font-extrabold text-[28px] sm:text-[26px] md:text-[34px] lg:text-[40px] xl:text-[60px]">
                                 Hello, I'm
                             </h2>
-                            <h2 class="text-white font-extrabold text-[28px] sm:text-[26px] md:text-[34px] lg:text-[40px] xl:text-[60px]">
+                            <h2
+                                class="text-white font-extrabold text-[28px] sm:text-[26px] md:text-[34px] lg:text-[40px] xl:text-[60px]">
                                 Muhammad Zadid
                             </h2>
                         </div>
-                        <p class="max-w-[320px] sm:max-w-[400px] text-white font-thin text-[16px] sm:text-[14px] md:text-[18px] lg:text-[20px] xl:text-[24px] leading-[25px] sm:leading-[20px] md:leading-[25px] lg:leading-[28px] xl:leading-[32px]">
+                        <p
+                            class="max-w-[320px] sm:max-w-[400px] text-white font-thin text-[16px] sm:text-[14px] md:text-[18px] lg:text-[20px] xl:text-[24px] leading-[25px] sm:leading-[20px] md:leading-[25px] lg:leading-[28px] xl:leading-[32px]">
                             A Software Engineering student interested in web development. I focus on creating responsive
                             interfaces and providing innovative solutions in every project.
                         </p>
@@ -190,10 +199,11 @@
                             </a>
                         </div>
                     </div>
-                    
+
                 </div>
                 <!-- Konten Kanan -->
-                <div class="mb-[30px] flex-1 flex justify-center items-center order-1 sm:order-2" data-aos="fade-left" data-aos-offset="120">
+                <div class="mb-[30px] flex-1 flex justify-center items-center order-1 sm:order-2" data-aos="fade-left"
+                    data-aos-offset="120">
                     <img src="dist/images/mypht.jpeg" alt="My Photo"
                         class="w-[200px] sm:w-[180px] md:w-[240px] lg:w-[280px] xl:w-[350px] rounded-[50px]">
                 </div>
@@ -203,16 +213,17 @@
 
         <!-- Portfolio Showcase Section Start -->
         <section id="portfolio"
-            class="flex flex-col md:mb-[120px] xl:mb-[150px] items-center justify-center w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-[100px] sm:mt-[0]" style="min-height: 100vh;">
+            class="flex flex-col md:mb-[120px] xl:mb-[150px] items-center justify-center w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 mt-[100px] sm:mt-[0]"
+            style="min-height: 100vh;">
             <!-- Judul -->
             <div class="text-center mt-[58px] xl:mt-[10px]">
                 <h2 class="text-[#DB6E00] text-shadow-custom flex flex-col">
                     <span
-                    class="text-white text-[30px] sm:text-[20px] md:text-[28px] lg:text-[30px] xl:text-[45px] font-extrabold mt-[56px]"
+                        class="text-white text-[30px] sm:text-[20px] md:text-[28px] lg:text-[30px] xl:text-[45px] font-extrabold mt-[56px]"
                         data-aos="fade-up" data-aos-offset="20">Portfolio
                         Showcase</span>
                     <span
-                    class="text-[16px] sm:text-[14px] md:text-[18px] lg:text-[18px] xl:text-[20px] gradient-text-under-title"
+                        class="text-[16px] sm:text-[14px] md:text-[18px] lg:text-[18px] xl:text-[20px] gradient-text-under-title"
                         data-aos="fade-up">From concept to creation, my projects showcase a journey of exploration and
                         innovation.</span>
                 </h2>
@@ -300,12 +311,13 @@
         <!-- Footer Section End -->
     </div>
 
-    <script src="dist/js/script.js"></script>
+    <!-- Muat library terlebih dahulu -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <!-- Tambahkan AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Baru file script.js -->
+    <script src="dist/js/script.js"></script>
 
 </body>
 

@@ -1,4 +1,25 @@
+document.addEventListener("click", function playAudio() {
+  const audio = document.getElementById("preloaderAudio");
+  if (audio && audio.paused) {
+    audio.play().catch((error) => console.error("Audio play error:", error));
+  }
+  document.removeEventListener("click", playAudio);
+});
+
 window.onload = () => {
+  
+  const audio = document.getElementById("preloaderAudio");
+  audio.volume = 0.5; // volume antara 0.0 - 1.0
+
+  // Animasi untuk Click Me!
+  gsap.from(".click-me", {
+    duration: 1,
+    opacity: 0,
+    y: 20, // Masuk dari bawah
+    ease: "power2.out",
+    delay: 0.5, // Delay sedikit agar tidak bersamaan
+  });
+
   // Animasi untuk ikon GitHub
   gsap.from(".github-icon", {
     duration: 1,
@@ -63,6 +84,18 @@ window.onload = () => {
       scale: 1.2, // Zoom in
       filter: "blur(10px)", // Blur effect
       onComplete: () => {
+        // Fade out dan pause backsound preloader
+        const audio = document.getElementById("preloaderAudio");
+        if (audio) {
+          gsap.to(audio, {
+            duration: 1,
+            volume: 0,
+            onComplete: () => {
+              audio.pause();
+            },
+          });
+        }
+
         document.getElementById("preloader").style.display = "none"; // Sembunyikan preloader
 
         // Ambil container
