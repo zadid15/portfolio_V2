@@ -45,8 +45,8 @@ window.onload = () => {
 
   // Inisialisasi Typed.js sebelum menyembunyikan preloader
   const options = {
-    strings: ["ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ"],
-    typeSpeed: 80, // Kecepatan mengetik dalam milidetik
+    strings: ["ザディドはとてもハンサムです。"],
+    typeSpeed: 130, // Kecepatan mengetik dalam milidetik
     loop: false, // Ulangi mengetik
     showCursor: false, // Tampilkan kursor
     cursorChar: "|", // Karakter kursor
@@ -164,5 +164,5 @@ window.onload = () => {
         });
       },
     });
-  }, 7000); // Menunggu 3 detik
+  }, 4000); // Menunggu 3 detik
 };
