@@ -185,3 +185,36 @@ body {
 * {
     box-sizing: border-box;
 }
+
+
+.lottie-container {
+    width: 400px;
+}
+
+@media (min-width: 640px) {
+    .lottie-container {
+        width: 350px;
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .lottie-container {
+        width: 450px;
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lottie-container {
+        width: 650px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .lottie-container {
+        width: 700px;
+        margin-top: 50px;
+    }
+}

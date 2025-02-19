@@ -16,6 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 
 <body class="bg-[#210D4F]">
@@ -43,7 +45,8 @@
                 class="mt-[-12px] sm:mt-[-25px] md:mt-[-30px] lg:mt-[-30px]  gradient-text portfolio-text text-[28px] sm:text-[50px] md:text-[60px] lg:text-[65px] font-bold">
                 Portfolio Website</h1>
             <p id="typed-output" class="text-[18px] sm:text-[24px] md:text-[26px] lg:text-[30px] font-light"></p>
-            <p class="mt-10 click-me text-[18px] sm:text-[24px] md:text-[26px] lg:text-[30px] font-bold text-white">Click Here !</p>
+            <p class="mt-10 click-me text-[18px] sm:text-[24px] md:text-[26px] lg:text-[30px] font-bold text-white">
+                Click Here !</p>
         </div>
     </div>
 
@@ -92,7 +95,7 @@
             class="w-full flex flex-col items-center justify-center sm:flex-row max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-16">
             <!-- Bagian Kiri: Konten Teks -->
             <div
-                class="xl:mt-[150px] flex-1 space-y-[42px] p-2 sm:space-y-[40px] md:space-y-[40px] lg:space-y-[50px] xl:mr-[250px]">
+                class="xl:mt-[80px] flex-1 space-y-[42px] p-2 sm:space-y-[40px] md:space-y-[40px] lg:space-y-[50px] xl:mr-[250px]">
                 <div class="space-y-[-5px]">
                     <div
                         class="space-y-[-18px] sm:space-y-[-15px] md:space-y-[-20px] lg:space-y-[-25px] xl:space-y-[-45px] text-[36px] sm:text-[34px] md:text-[40px] lg:text-[50px] xl:text-[70px]">
@@ -146,10 +149,15 @@
                 </div>
             </div>
             <!-- Bagian Kanan: GIF -->
-            <div class="xl:mt-[150px] items-center text-center sm:ml-[80px] md:ml-[80px] lg:ml-[80px] xl:ml-[150px] "
-                data-aos="fade-left">
-                <img src="dist/images/xero-code.gif" alt="GIF Animasi"
-                    class="w-[240px] sm:w-[255px] md:w-[300px] lg:w-[360px] xl:w-[450px]">
+            <div data-aos="fade-left">
+                <dotlottie-player 
+                src="https://lottie.host/5124e9cf-d832-4c08-b0bf-7149dfa98bdb/JfvDL1yJkY.lottie"
+                background="transparent" 
+                speed="1" 
+                class="lottie-container"
+                loop
+                autoplay>
+            </dotlottie-player>
             </div>
         </section>
         <!-- Hero Section End -->
@@ -319,6 +327,8 @@
     <!-- Baru file script.js -->
     <script src="dist/js/script.js"></script>
 
+    <!-- Lottie Animation Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
 </body>
 
 </html>
