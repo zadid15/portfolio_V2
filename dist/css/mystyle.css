@@ -105,7 +105,7 @@ body {
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #372162, #4a287b, #361979, #210d48, #0e022a);
+    /* background: linear-gradient(45deg, #372162, #4a287b, #361979, #210d48, #0e022a); */
     /* Gradien dengan variasi warna */
     background-size: 400% 400%;
     /* Memperbesar ukuran gradien */
