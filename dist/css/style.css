@@ -1055,6 +1055,11 @@ video {
   color: rgb(33 13 79 / var(--tw-text-opacity, 1));
 }
 
+.hover\:text-\[\#B5B5B5\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(181 181 181 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -1073,6 +1078,11 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-\[\#595959\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(89 89 89 / var(--tw-text-opacity, 1));
 }
 
 .hover\:shadow-lg:hover {
