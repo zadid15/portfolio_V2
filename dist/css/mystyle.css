@@ -160,7 +160,7 @@ body {
 }
 
 .btn-modern:hover {
-    background-color: #210D4F;
+    background-color: #272727;
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
