@@ -6,6 +6,15 @@ document.addEventListener("click", function playAudio() {
   document.removeEventListener("click", playAudio);
 });
 
+function openModal(img) {
+  document.getElementById("modalImage").src = img.src;
+  document.getElementById("imageModal").classList.remove("hidden");
+}
+
+function closeModal() {
+  document.getElementById("imageModal").classList.add("hidden");
+}
+
 window.onload = () => {
   
   const audio = document.getElementById("preloaderAudio");

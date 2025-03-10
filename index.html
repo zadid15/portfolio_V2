@@ -92,8 +92,7 @@
         <section id="home"
             class="w-full flex flex-col items-center justify-center sm:flex-row max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-16">
             <!-- Bagian Kiri: Konten Teks -->
-            <div
-                class="flex-1 space-y-[42px] p-2 sm:space-y-[40px] md:space-y-[40px] lg:space-y-[50px] xl:mr-[250px]">
+            <div class="flex-1 space-y-[42px] p-2 sm:space-y-[40px] md:space-y-[40px] lg:space-y-[50px] xl:mr-[250px]">
                 <div class="space-y-[-5px]">
                     <div
                         class="space-y-[-18px] sm:space-y-[-15px] md:space-y-[-20px] lg:space-y-[-25px] xl:space-y-[-45px] text-[36px] sm:text-[34px] md:text-[40px] lg:text-[50px] xl:text-[70px]">
@@ -229,60 +228,80 @@
                 </h2>
             </div>
             <!-- Portfolio Cards Start -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5 max-w-[1450px] mx-auto"
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5 max-w-[1450px] mx-auto items-start"
                 data-aos="fade-up" data-aos-offset="120">
                 <!-- Card 1 -->
                 <div class="bg-[#272727] md:p-3 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
                     data-aos="fade-up" data-aos-offset="120">
                     <img src="dist/images/projek1.png" alt="Project Image"
-                        class="w-full h-[200px] sm:h-[120px] md:h-[180px] lg:h-[200px] xl:h-[250px] object-cover">
+                        class="w-full sm:h-[120px] md:h-[180px] lg:h-[200px] xl:h-[250px] object-cover cursor-pointer"
+                        onclick="openModal(this)">
                     <div class="p-6 sm:p-3">
-                        <h3
-                            class="text-white text-xl sm:text-[16px] md:text-[18px] xl:text-[24px] font-medium mb-2 sm:leading-[20px] md:leading-[22px] lg:leading-[24px] xl:leading-[26px]">
-                            Modern Coffee
-                            Shop Website Design</h3>
+                        <h3 class="text-white text-xl sm:text-[16px] md:text-[18px] xl:text-[24px] font-medium mb-2">
+                            Digameinaja</h3>
                         <p
                             class="text-white text-md sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-extralight mb-4">
-                            I crafted a responsive website for Kenangan
-                            Senja,
-                            showcasing
-                            its menu, location, and a design that reflects its warm, nostalgic vibe.</p>
+                            A game discovery web application built with React, TypeScript, and Tailwind CSS, powered by
+                            RAWG API.</p>
+                        <a href="https://digameinaja.vercel.app" target="_blank"
+                            class="inline-block bg-[#5026b4] text-white px-4 py-2 rounded-md text-sm hover:bg-[#461da6] transition">
+                            View Site
+                        </a>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="bg-[#272727] md:p-3 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
                     data-aos="fade-up" data-aos-offset="120">
                     <img src="dist/images/projek4.png" alt="Project Image"
-                        class="w-full h-[200px] sm:h-[120px] md:h-[180px] lg:h-[200px] xl:h-[250px] object-cover">
+                        class="w-full sm:h-[120px] md:h-[180px] lg:h-[200px] xl:h-[250px] object-cover"
+                        onclick="openModal(this)">
                     <div class="p-6 sm:p-3">
                         <h3 class="text-white text-xl sm:text-[16px] md:text-[18px] xl:text-[24px] font-medium mb-2">
-                            Simple Movie Website</h3>
+                            IMDb Movie Fetcher
+                        </h3>
                         <p
                             class="text-white text-md sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-extralight mb-4">
-                            Where I fetch data from the Internet Movie
-                            Database
-                            (IMDb)
-                            for this website.</p>
+                            imdb-movie-fetcher is a simple web application that fetches movie data from the Internet
+                            Movie Database (IMDb) API. It allows users to search for movies, view details such as
+                            ratings, cast, genre, and more.
+                        </p>
+                        <a href="https://imdb-movie-fetcher.vercel.app" target="_blank"
+                            class="inline-block bg-[#5026b4] text-white px-4 py-2 rounded-md text-sm hover:bg-[#461da6] transition">
+                            View Site
+                        </a>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="bg-[#272727] md:p-3 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
                     data-aos="fade-up" data-aos-offset="120">
                     <img src="dist/images/projek3.png" alt="Project Image"
-                        class="w-full h-[200px] sm:h-[120px] md:h-[180px] lg:h-[200px] xl:h-[250px] object-cover">
+                        class="w-full sm:h-[120px] md:h-[180px] lg:h-[200px] xl:h-[250px] object-cover"
+                        onclick="openModal(this)">
                     <div class="p-6 sm:p-3">
                         <h3 class="text-white text-xl sm:text-[16px] md:text-[18px] xl:text-[24px] font-medium mb-2">
-                            Gallery Website</h3>
+                            Weather Web App</h3>
                         <p
                             class="text-white text-md sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-extralight mb-4">
-                            I love Avengers movies, so I created this
-                            website.</p>
+                            WeatherWebApp is a web application that allows users to get the current weather information
+                            for cities around the world using the OpenWeather API.
+                        </p>
+                        <a href="https://weather-app-zdd.vercel.app" target="_blank"
+                            class="inline-block bg-[#5026b4] text-white px-4 py-2 rounded-md text-sm hover:bg-[#461da6] transition">
+                            View Site
+                        </a>
                     </div>
                 </div>
             </div>
             <!-- Portfolio Cards End -->
         </section>
         <!-- Portfolio Showcase Section End -->
+
+        <!-- Modal -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden z-50">
+            <span class="absolute top-5 right-5 text-white text-3xl cursor-pointer"
+                onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="max-w-[90%] max-h-[90%] rounded-lg">
+        </div>
 
         <!-- Footer Section Start -->
         <footer class="bg-gray-900 text-gray-400 py-6 mt-[80px]">
