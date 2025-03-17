@@ -184,7 +184,7 @@ window.onload = () => {
             },
             move: {
               enable: true,
-              speed: 2, // Kecepatan dasar partikel
+              speed: 3, // Kecepatan dasar partikel
               direction: "none",
               random: true,
               straight: false,
