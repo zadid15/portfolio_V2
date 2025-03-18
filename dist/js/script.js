@@ -144,6 +144,7 @@ window.onload = () => {
             "Web Development Enthusiast",
             "Tech Enthusiast",
             "Creative Digital Experiences",
+            "Coding Enthusiast",
           ],
           typeSpeed: 80,
           backSpeed: 40,
